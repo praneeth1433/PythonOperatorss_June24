@@ -118,3 +118,46 @@ b=a
 print(a is b)
 print(b is a)
 print(a is not b)
+
+#Data Types
+print('--------------')
+
+#numbers/numeric
+
+#Int
+a=1
+print(a)
+print(type(a))
+
+
+#FLoat
+
+b=2.22
+print(b)
+print(type(b))
+
+#String STR
+
+name='praneeth'
+print(name)
+print(type(name))
+
+#Boolean
+
+a=True
+print(a)
+print(type(a))
+
+#COmplex a+bj
+
+a=3+4j
+b=1+2j
+c=a+b
+print(c)
+print(type(b))
+
+#NONE type
+
+score=None
+print(score)
+print(type(score))
