@@ -32,11 +32,54 @@ print(student)
 print(student['class'])
 print(student.get('name'))
 
+#4.Pop()
 
-name=(input('enter your name:'))
-age=int(input('enter your age:'))
-if age>18:
-    print(name,'you are allow')
+dict1 = {
+    'a':1,
+    'b':2,
+    'c':3,
+    'd':4,
+}
+value = dict1.pop('c')
+print(value)
+print(dict1)
+
+
+print('-----------------------------------------')
+#5. popitem() - it removes last inserted key-value
+
+dict1 = {
+    'a':1,
+    'b':2,
+    'c':3,
+    'd':4,
+}
+value = dict1.popitem()
+print(value)
+print(dict1)
+
+
+print('--------------------------------------------')
+#6. Clear() - it delete all the data in dict
+
+dict1 = {
+    'a':1,
+    'b':2,
+    'c':3,
+    'd':4,
+}
+dict1.clear()
+print(dict1)
+print(type(dict1))
+
+
+
+
+print('---------------------------------------------------------')
+# name=(input('enter your name:'))
+# age=int(input('enter your age:'))
+# if age>18:
+#     print(name,'you are allow')
 
 #sort()
 
@@ -144,3 +187,11 @@ listOfOrders.append(order3)
 listOfOrders.append(order4)
 print(listOfOrders)
 
+#Updating and adding the dict
+
+order4['name']='Iphone'
+print(order4)
+print(listOfOrders)
+
+order4.update({'value':2000})
+print(listOfOrders)
